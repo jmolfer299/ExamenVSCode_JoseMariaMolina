@@ -28,6 +28,16 @@ public class Calculadora{
                 resultado = num1 - num2;
                 System.out.println("La resta es: " + resultado);
                 break;
+            case 3:
+            resultado = num1 * num2;
+            System.out.println("La multiplicación es: " + resultado);
+            break;
+            case 4:
+            if (num2 != 0) {
+                resultado = num1 / num2;
+                System.out.println("La división es: " + resultado);
+            } else
+            System.out.println("No se puede dividir por cero");
             default:
                 System.out.println("Opción no válida");
             scanner.close();
